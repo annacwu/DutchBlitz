@@ -11,6 +11,12 @@
 		92C569992BD9843A00C05995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569982BD9843A00C05995 /* ContentView.swift */; };
 		92C5699B2BD9843B00C05995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C5699A2BD9843B00C05995 /* Assets.xcassets */; };
 		92C5699E2BD9843B00C05995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C5699D2BD9843B00C05995 /* Preview Assets.xcassets */; };
+		92C569A52BD9846500C05995 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569A42BD9846500C05995 /* GameView.swift */; };
+		92C569A72BD9847000C05995 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569A62BD9847000C05995 /* PlayerView.swift */; };
+		92C569A92BD9848600C05995 /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569A82BD9848600C05995 /* AddPlayerView.swift */; };
+		92C569AB2BD9849400C05995 /* AddGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569AA2BD9849400C05995 /* AddGameView.swift */; };
+		92C569AD2BD9849C00C05995 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569AC2BD9849C00C05995 /* Player.swift */; };
+		92C569AF2BD984A300C05995 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C569AE2BD984A300C05995 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		92C569982BD9843A00C05995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92C5699A2BD9843B00C05995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C5699D2BD9843B00C05995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92C569A42BD9846500C05995 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		92C569A62BD9847000C05995 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		92C569A82BD9848600C05995 /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
+		92C569AA2BD9849400C05995 /* AddGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGameView.swift; sourceTree = "<group>"; };
+		92C569AC2BD9849C00C05995 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		92C569AE2BD984A300C05995 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,12 @@
 				92C569982BD9843A00C05995 /* ContentView.swift */,
 				92C5699A2BD9843B00C05995 /* Assets.xcassets */,
 				92C5699C2BD9843B00C05995 /* Preview Content */,
+				92C569A42BD9846500C05995 /* GameView.swift */,
+				92C569A62BD9847000C05995 /* PlayerView.swift */,
+				92C569A82BD9848600C05995 /* AddPlayerView.swift */,
+				92C569AA2BD9849400C05995 /* AddGameView.swift */,
+				92C569AC2BD9849C00C05995 /* Player.swift */,
+				92C569AE2BD984A300C05995 /* Game.swift */,
 			);
 			path = DutchBlitz;
 			sourceTree = "<group>";
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C569AB2BD9849400C05995 /* AddGameView.swift in Sources */,
+				92C569A92BD9848600C05995 /* AddPlayerView.swift in Sources */,
 				92C569992BD9843A00C05995 /* ContentView.swift in Sources */,
+				92C569A52BD9846500C05995 /* GameView.swift in Sources */,
+				92C569AD2BD9849C00C05995 /* Player.swift in Sources */,
 				92C569972BD9843A00C05995 /* DutchBlitzApp.swift in Sources */,
+				92C569A72BD9847000C05995 /* PlayerView.swift in Sources */,
+				92C569AF2BD984A300C05995 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
