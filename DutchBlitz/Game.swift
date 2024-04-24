@@ -10,13 +10,13 @@ import Observation
 
 @Observable
 class Game {
-    var players: [Player]
+    var players: [Players]
     var date: Date
-    var winner: Player?
+    var winner: Players?
     var timePlayed: TimeInterval
     var type: String
     
-    init(players: [Player], date: Date, timePlayed: TimeInterval, type: String) {
+    init(players: [Players], date: Date, timePlayed: TimeInterval, type: String) {
         self.players = players
         self.date = date
         self.winner = nil
@@ -24,7 +24,7 @@ class Game {
         self.type = type
     }
     
-    func setWinner(winner: Player) {
+    func setWinner(winner: Players) {
         self.winner = winner
     }
 }
