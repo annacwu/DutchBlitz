@@ -10,11 +10,28 @@ import Observation
 
 @Observable
 class Players {
-    var existingplayers = [PlayerItem]()
+    var existingplayers = [PlayerItem]() {
+        didSet {
+            if let encoded = try? JSONEncoder().encode(existingplayers) {
+                UserDefaults.standard.set(encoded, forKey: "ExistingPlayers")
+            }
+        }
+    }
+    
+    init() {
+        if let savedPlayers = UserDefaults.standard.data(forKey: "ExistingPlayers") {
+            if let decodedPlayers = try? JSONDecoder().decode([PlayerItem].self, from: savedPlayers) {
+                existingplayers = decodedPlayers
+                return
+            }
+        }
+        
+        existingplayers = []
+    }
 }
 
-struct PlayerItem: Identifiable {
-    let id = UUID()
+struct PlayerItem: Identifiable, Codable {
+    var id = UUID()
     let name: String
     let currPoints: Int
     let wins: Int
