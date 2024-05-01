@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddPlayerView: View {
+    @Environment(\.dismiss) var dismiss
     @State private var name = ""
     
     var players: Players
@@ -22,6 +23,7 @@ struct AddPlayerView: View {
                 Button("Save"){
                     let player = PlayerItem(name: name, currPoints: 0, wins: 0, totalPoints: 0, gamesPlayed: 0)
                     players.existingplayers.append(player)
+                    dismiss()
                 }
             }
         }
